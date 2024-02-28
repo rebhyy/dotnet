@@ -21,3 +21,4 @@ C:\dotnet\AirportManagement-S3\AirportManagement\AM.ApplicationCore\obj\Debug\ne
 C:\dotnet\AirportManagement-S3\AirportManagement\AM.ApplicationCore\obj\Debug\net6.0\refint\AM.ApplicationCore.dll
 C:\dotnet\AirportManagement-S3\AirportManagement\AM.ApplicationCore\obj\Debug\net6.0\AM.ApplicationCore.pdb
 C:\dotnet\AirportManagement-S3\AirportManagement\AM.ApplicationCore\obj\Debug\net6.0\ref\AM.ApplicationCore.dll
+C:\dotnet\AirportManagement-S3\AirportManagement\AM.ApplicationCore\obj\Debug\net6.0\AM.ApplicationCore.sourcelink.json

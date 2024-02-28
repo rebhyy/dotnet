@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Mail;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -8,7 +9,7 @@ namespace AM.ApplicationCore.Domain
 {
     public class Passenger
     {
-
+        public int Id { get; set; } 
 
         public string PassportNumber { get; set; }
         public string FirstName { get; set; }
@@ -23,8 +24,13 @@ namespace AM.ApplicationCore.Domain
 
         public override string ToString()
         {
-            return "FirstName: " + FirstName + " LastName: " + LastName + " date of Birth: " + BirthDate;
+            return "BirthDate:" + BirthDate
+                + "PassportNumber:" + PassportNumber
+                + "EmailAdress:" + EmailAddress
+                + "FirstName:" + FirstName
+                + "LastName:" + LastName
+                + "TelNumber:" + TelNumber;
         }
-       
+
     }
 }
