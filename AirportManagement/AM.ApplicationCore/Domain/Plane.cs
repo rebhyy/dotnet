@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -57,8 +58,11 @@ namespace AM.ApplicationCore.Domain
         public PlaneType PlaneType { get; set; }
 
         public DateTime ManufactureDate { get; set; }
+
+        [Range(0, int.MaxValue, ErrorMessage = "Only positive number allowed")]
         public int Capacity { get; set; }
 
+        public string AirLineLogo { get; set; }
         #endregion
 
         #region prop de navigation
@@ -76,6 +80,16 @@ namespace AM.ApplicationCore.Domain
 
         public Plane()
         {
+        }
+
+        public override string ToString()
+        {
+            return 
+                 "PlaneId:" + PlaneId
+                +"Capacity:" + Capacity
+                + "ManufactorDate:" + ManufactureDate
+                + "PlaneType:" + PlaneType
+                ;
         }
     }
 }
