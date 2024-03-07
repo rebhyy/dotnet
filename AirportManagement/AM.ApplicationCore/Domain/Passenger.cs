@@ -17,12 +17,15 @@ namespace AM.ApplicationCore.Domain
         public string PassportNumber { get; set; }
 
 
-        [StringLength(25, MinimumLength = 3, ErrorMessage = "First name must be between 3 and 25 characters long.")]
-        public string FirstName { get; set; }
+        //[StringLength(25, MinimumLength = 3, ErrorMessage = "First name must be between 3 and 25 characters long.")]
+        //public string FirstName { get; set; }
 
-        public string LastName { get; set; }
-        
-        
+        //public string LastName { get; set; }
+
+
+        public FullName PassengerName { get; set; }
+
+
         [Display(Name = "Date of Birth")]
         [DataType(DataType.Date, ErrorMessage = "Invalid date format.")]
         public DateTime BirthDate { get; set; }
@@ -43,8 +46,8 @@ namespace AM.ApplicationCore.Domain
             return "BirthDate:" + BirthDate
                 + "PassportNumber:" + PassportNumber
                 + "EmailAdress:" + EmailAddress
-                + "FirstName:" + FirstName
-                + "LastName:" + LastName
+                + "FirstName:" + PassengerName.FirstName
+                + "LastName:" + PassengerName.LastName
                 + "TelNumber:" + TelNumber;
         }
 
